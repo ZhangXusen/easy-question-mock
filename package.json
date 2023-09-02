@@ -1,15 +1,21 @@
 {
-  "name": "easy-question-mock",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "mockjs": "^1.1.0"
-  }
+	"name": "easy-question-mock",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"koa": "^2.14.2",
+		"koa-router": "^12.0.0",
+		"mockjs": "^1.1.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.1"
+	}
 }
