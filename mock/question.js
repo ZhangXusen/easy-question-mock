@@ -1,5 +1,5 @@
 const Mock = require("mockjs");
-const getQuestionList = require("./data/getQuestionList");
+const getQuestionList = require("./data/getQuestList");
 const Random = Mock.Random;
 module.exports = [
 	{
@@ -54,6 +54,39 @@ module.exports = [
 					list: getQuestionList({ len: pageSize, isDeleted, isStar }), // 当前页
 					total: 100, // 总数，用于分页
 				},
+			};
+		},
+	},
+	{
+		// 更新问卷
+		url: "/api/question/:id",
+		method: "patch",
+		response() {
+			return {
+				errno: 0,
+			};
+		},
+	},
+	{
+		// 复制问卷
+		url: "/api/question/duplicate/:id",
+		method: "post",
+		response() {
+			return {
+				errno: 0,
+				data: {
+					id: Random.id(),
+				},
+			};
+		},
+	},
+	{
+		// 批量彻底删除
+		url: "/api/question",
+		method: "delete",
+		response() {
+			return {
+				errno: 0,
 			};
 		},
 	},
