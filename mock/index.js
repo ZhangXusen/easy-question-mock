@@ -1,8 +1,6 @@
 const question = require("./question");
-// const user = require("./user");
-// const stat = require("./stat");
-// const answer = require("./answer");
+const user = require("./user");
 
-const mockList = [...question];
+const mockList = [...question, ...user];
 
 module.exports = mockList;
