@@ -1,3 +1,11 @@
+/*
+ * @Description:
+ * @Version: 1.0
+ * @Author: 小国际
+ * @Date: 2023-09-02 21:03:22
+ * @LastEditors: 小国际
+ * @LastEditTime: 2023-09-24 14:51:42
+ */
 const Mock = require("mockjs");
 const getQuestionList = require("./data/getQuestList");
 const getComponentList = require("./data/getComponentList");
@@ -14,8 +22,8 @@ module.exports = [
 					id: Random.id(),
 					title: Random.ctitle(),
 					desc: "问卷描述",
-					js: "",
-					css: "",
+					js: "1111",
+					css: "111",
 					isDeleted: false,
 					isPublished: true,
 					componentList: getComponentList(),

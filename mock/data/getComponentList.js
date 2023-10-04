@@ -72,7 +72,7 @@ function getComponentList() {
 			isLocked: false,
 			props: {
 				title: "单选标题",
-				isVertical: false,
+				isVertical: true,
 				options: [
 					{ value: "item1", text: "选项1" },
 					{ value: "item2", text: "选项2" },
